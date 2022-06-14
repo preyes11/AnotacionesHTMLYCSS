@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotaciones Html y Css</title>
+      <h2>CREAR ARCHIVO</h2>
+        <p>Dentro de VS, ir a crear carpeta, colocar nombre que se le desea y colocar al final la extension ".html"
+        Ir a file, new file o usar atajo CTRL+N, crea una carpeta y se guarda en SAVE o SAVE AS y se le pone el nombre más la extension
+        LA PRIMER LINEA DE UN ARCHIVO HTML ES 
+        <!--<!DOCTYPE html>--> </p>
+      
+      <h2>ELEMENTOS Y ETIQUETAS (Elements & Tags)</h2>  
+        <p>Componente basico de un html, las etiquetas definen elementos en el HTML
+          <TIPO DE ELEMENTO>
+          ETIQUETA APERTURA: <html>
+          ETIQUETA DE CIERRE: >/html>
+          
+          ej: <!-- <h1> hola mundo </h1> -->
+          
+          Algunos elementos no necesitan elementos de cierre (self-closingtags) como o ej <img>
+          
+          <!DOCTYPE html>
+          <html> --> elemento raiz
+          
+          EL CONTENIDO VA DENTRO DEL ELEMENTO RAIZ
+          
+          </html> --> elemento raiz
+          
+          luego:
+          
+          <!DOCTYPE html>
+          <html>
+            <head> --> cabeza
+              Elementos importantes para la pagina pero no figuran en la visualizacion ej: enlace a carpeta.css, etc
+            </head>
+            <body>
+          
+            </body>
+          </html></p>
+      
+      <h2>INDENTACION</h2>  
+            <p>En espaciado de jerarquias, se utilizan 2 espacios, para mover 2 espacios dentro del VS, usar el atajo CTRL+[ , para deshacer aquella accion 
+              apretar CTRL+]
+              
+              <html>
+              __<head>
+              
+              __</head>
+              </html>
+              </p>
+      
+      <h2>ESPECIFICAR IDIOMA</h2>  
+        <p><html lang="es">
+          lang--> atributo languaje
+          es/en --> idioma
+          </p>
+          
+      <h2>CREAR ENCABEZADOS</h2>
+        <p><h1>texto</h1>  Heading 1 (mas importante)
+          <h2>texto</h2>
+          <h3>texto</h3>
+          <h4>texto</h4>
+          <h5>texto</h5>
+          <h6>texto</h6>  Heading 6 (menos importante)</p>  
+          
+      <h2>PARRAFOS</h2>    
+        <p> <p> Haz click aqui para ver mas imagenes </p>
+        ALT+Z --> El codigo se adapta al tamaño de ventana, evitanto desplazarse horizontalmente, apretar nuevamente para deshacer cambios</p>    
+
+      <h2>BUSCAR EN DOCUMENTACION</h2>  
+        <p>developer.mozilla.org --> informacion sobre HTML y CSS (web de desarrolladores de mozilla)</p> 
+        
+      <h2>COMENTARIOS</h2>  
+        <p><!--mensaje--> (no afecta a la estructura)
+          CTRL + / para convertir etiqueta en comentario y tambien deshacer esta accion.</p>
+         
+      <h2>ELEMENTO <main></h2>  
+        <p>main: principal
+
+          <h2>mensaje</h2>
+           <main> --> representa contenido principal del body
+             <h3> mensaje >/h3>
+             <p> mensaje </p>
+             <!--comentario-->
+           </main>
+          
+          nota: solo puede haber 1 main y no puede descender de las etiquetas <article>, <aside>, <footer>, <header></p> 
+      
+      <h2>INDENTACION</h2>  
+        <p>Se usan dos espacios, es mas conciso y es lo recomendado, o afecta a la estructura pero facilita su lectura</p>    
+
+      <h2>IMAGENES Y ATRIBUTOS</h2>  
+        <p>etiqueta <img>
+
+          copiar enlace desde internet:
+          <img src="https:// enlace imagen" alt"mensaje descriptivo">
+          
+          Imagen desde la compu
+          
+          <img src="lasagna.jpg">
+          
+          Si la imagen esta dentro de una carpeta
+          
+          <img src="imagenes/lasagna.jpg"> 
+          
+          notas:
+          src: source (fuente)
+          alt: alternativa de texto
+          carpeta/imagen: la barra significa que la imagen esta dentro de la carpeta
+          </p>
+
+      <h2>ENLACES EXTERNOS</h2>   
+        <p><a> anchor (apertura)
+
+          ej:
+          <p>texto <a href="pagina a enlazar"> texto </a> </p>
+          
+          El texto sevira como enlace a la pagina a enlazar, pero se abrirá en la misma pestaña.
+           Para que abra en pestaña nueva:
+          
+          <p>texto <a href="pagina a enlazar" target="blank" rel="noopener noreferrer"> texto </a></p>
+          
+          target="blank": indica que se abre en pestaña nueva
+          rel:"noopener noreferrer": protege ante tabnobbing (atentado malicioso)</p> 
+
+      <h2>ENLACES INTERNOS</h2>   
+         <p>El enlazado interno se realiza mediante Ids
+
+          <a href="# parrafo-1"> parrafo 1 </a>
+          <!--<h3 id="parrafo-1>texto</h3>-->
+          </p>
+
+      <h2>ENLACES CON IMAGENES</h2>  
+         <p><a href="pagina a linkear"><img src="direccion de imagen" alt="descripcion imagen"></a>
+
+          nota: dentro de la etiqueta <a> se puede aplicar el atributo target y el rel
+          La imagen, al apretar en ella te dirige a la pagina a linkear, ubicada dentro de de <a>
+          </p>
+
+      <h2>CREAR ENLACES CON #</h2>   
+         <p>Enlaces muertos (dead links)
+          <a href="#"...
+          
+          Muestran como se vería un enlace en la página...></a></p> 
+
+      <h2>LISTAS NO ORDENADAS</h2>    
+          <p><ul> 
+            <li> texto 1 </li> elemento de lista
+            <li> texto 2 </li> elemento de lista
+            <li> texto 3 </li> elemento de lista
+          </ul>
+          
+          *texto 1
+          *texto 2
+          *texto 3</p>
+
+      <h2>LISTAS ORDENADAS </h2>   
+        <p><ol> 
+          <li> texto 1 </li>
+          <li> texto 2 </li>
+          <li> texto 3 </li>
+        </ol>
+        
+        1.texto1
+        2.texto2
+        3.texto3</p> 
+
+      <h2>ETIQUETA STRONG (NEGRITA)</h2>  
+        <p><p> cosas que los gatos <strong> odian </strong> </p></p>
+
+      <h2>TEXTO EN CURSIVA</h2>
+        <p><p> cosas que los gatos <em> aman </em> </p></p>
+
+      <h2>TEXTO TACHADO (STRIKETHROUGH)</h2>  
+        <p><ul>
+          <li> texto 1 </li>
+          <li> texto 2 </li>
+          <li> <s> texto 3 </s> </li>
+        </p>
+
+      <h2>LINEA HORIZONTAL (Para separar por ej parrafos)</h2>  
+         <p><hr>
+          <h3></p>
+</head>
+<body>
+    
+</body>
+</html>
